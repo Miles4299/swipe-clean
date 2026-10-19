@@ -1,0 +1,44 @@
+{
+  "expo": {
+    "name": "SwipeClean",
+    "slug": "swipe-clean",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "dark",
+    "ios": {
+      "bundleIdentifier": "com.swipeclean.app",
+      "supportsTablet": true
+    },
+    "android": {
+      "package": "com.swipeclean.app",
+      "adaptiveIcon": {
+        "backgroundColor": "#E6F4FE",
+        "foregroundImage": "./assets/android-icon-foreground.png",
+        "backgroundImage": "./assets/android-icon-background.png",
+        "monochromeImage": "./assets/android-icon-monochrome.png"
+      },
+      "predictiveBackGestureEnabled": false
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      [
+        "expo-media-library",
+        {
+          "photosPermission": "SwipeClean uses your photo library so you can review and organize your photos.",
+          "savePhotosPermission": false,
+          "preventAutomaticLimitedAccessAlert": true,
+          "granularPermissions": [
+            "photo",
+            "video"
+          ]
+        }
+      ],
+      "expo-font",
+      "expo-image",
+      "expo-status-bar"
+    ]
+  }
+}
